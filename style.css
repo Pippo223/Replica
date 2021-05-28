@@ -1,0 +1,507 @@
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+div.topmost {
+    height: 25px;
+    width:15%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+/* 
+ div.toplinks{
+    border:1px solid green;
+}  */
+
+header {
+    background-color: white;
+   height: 75px;
+   position:sticky;
+}
+
+section {
+    height: 55%;
+    position: absolute;
+    margin-top: 15px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 5fr repeat(4, 1fr);
+}
+
+#headerdiv{
+    width: 76%;
+    margin:auto;
+    height: 55%;
+    display: grid;
+    grid-template-columns: 1.8fr 5.5fr 1fr 1fr 1fr 0.8fr;
+   position: absolute;
+   top:15px;
+   left:12.5%;
+}
+
+/*.headerdiv{
+    border:1px solid green;
+}*/
+
+input[id=header-input] {
+    width:98.5%;
+    margin-left:7px;
+    margin-top: 0;
+    padding: 0;
+    height: 100%;
+    border-radius: 5px;
+    border:1px solid grey;
+    font-size: 16px;
+}
+
+div > button[id=search] {
+    display:inline-block;
+    width: 90%;
+    height:100%;
+    margin-top: 0px;
+    margin-left: 6px;
+    padding-top: 0px;
+    background-color:  #f68b1e;
+    border-radius: 5px;
+    border:0px;
+    color: rgb(250, 250, 250);
+    font-weight: bolder;
+    box-shadow:0px 2px 2px 2px rgb(218, 218, 218);
+}
+
+#login, #help {
+    width: 102px;
+    height: 42px;
+    margin-left: 10px;
+    border-radius: 3px;
+    border: 0px;
+   /* background-color: rgb(221, 220, 220);*/
+   font-weight: bolder;
+   font-size: 0.88rem;
+   color: rgb(95, 95, 95);
+}
+
+select > option[value=help] {
+    font-size: 0.8rem;
+}
+
+select > option > button {
+    width: 50px;
+}
+
+#cart {
+    display: inline-block;
+    font-weight: bolder;
+   font-size: 0.9rem;
+   color: rgb(95, 95, 95);
+   margin-left:25px;
+   margin-top: 10px;
+}
+
+button[id=search] {
+    width: 100px;
+    height:30px;
+    background-color:#f68b1e;
+    border-radius: 3px;
+    border:0px;
+}
+
+#line3 {
+    margin: auto;
+    margin-top: 10px;
+    width: 76%;
+    height: 390px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: 10px 10px;
+    
+}
+
+.line3 {
+    /*border: 1px solid green;*/  
+    background-color: white;
+    border-radius:5px;
+}
+
+div.line3:first-child{
+     grid-row: 1 / span 2;
+}
+
+div.line3:nth-child(2){
+    grid-row: 1 / span 2;
+}
+
+#line4 {
+    margin: auto;
+    margin-top: 10px;
+    width: 76%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    
+}
+
+.line4 {
+    /*border: 1px solid green;  */  
+    background-color: white;
+    margin: 2px;
+}
+
+i.line4-write {
+    display: inline-block;
+    color: #282828;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    margin-top: 13px;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    font-weight:600;
+}
+
+.inner {
+    margin: auto;
+    width: 76%;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    background-color: white;
+    /* grid-template-columns: repeat (6, 1fr); */
+    gap: 10px 10px;
+}
+
+.line5 {
+    margin-inline-start: 2px;
+    margin-top:3px;
+    border-radius: 2px;
+    height: 98%;
+}
+
+.line5:hover {
+    box-shadow: 0px 0px 5px 5px #ebebeb;  
+    border: 3px solid transparent; 
+    cursor: pointer;
+}
+
+ h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom:0;
+    padding-left: 10px;
+    padding-top: 10px;
+
+    width: 99%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+     Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     position: relative;  
+}
+
+h4 > i {
+    font-style: normal;
+    font-weight: normal;
+}
+
+span {
+    font-weight: 500;
+    font-size: 0.75em;
+    display: inline-block;
+    position: absolute;
+    left:92%;
+ }
+
+.colored-bar {
+    background-color: #FFA500; 
+    border-radius: 5px 5px 0px 0px;
+    width: 76%;
+    height: 50px;
+    margin: auto;
+}
+
+.non-colored-header {
+    width: 76%;
+    height: 50px;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.double-col-grid {
+    grid-template-columns: 1fr 1fr; 
+}
+
+.single-col-grid {
+    grid-template-columns: 1fr;
+}
+
+.colored-bar.colored-blue {
+    background-color: blue;
+    color: white;
+}
+
+.bottom-div {
+    height:fit-content;
+    background-color: white;
+    border-radius: 5px;
+    width: 76%;
+    margin:auto;
+    margin-top: 10px;
+}
+
+p {
+    padding-left: 15px;
+    color: rgb(50,50,50);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 0px;
+}
+
+.bottom-div-heads.first
+{
+    padding-top: 18px;
+}
+
+.bottom-div-heads {
+    font-size: 1.2rem;
+}
+
+.writings {
+    font-size: 0.8rem;
+}
+
+.writings.last{
+    padding-bottom: 15px ;
+}
+
+.bold-underlines{
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.bold {
+    font-weight: bold;
+    font-style: normal;
+}
+
+#footer-head{
+    width: 100%;
+    height:150px;
+    background-color:rgb(28,28,28);
+    margin-top: 5%;
+}
+
+.footer-head {
+    margin: auto;
+    width: 76%;
+    height:150px;
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+}
+
+.sub-divs {
+    border: 1px solid yellow;
+}
+
+.tops {
+    color: white;
+    font-style: normal;
+    font-weight: bold;   
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    padding-top: 20px;
+    margin-block-end: 0;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.middle {
+    color: #c7c7cd;
+    font-style: normal;
+    font-size: 0.8rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 5px;
+}
+
+.down{
+    display:inline-block;
+    width: 100%;
+}
+
+input[id=footer-input] {
+    width: 65%;
+    height: 27px;
+    display: inline-block;
+    padding: 2px;
+    margin-left: 15px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+button.mf {
+    height:32px;
+     width:12%;
+     border-radius: 5px;
+     background-color:rgb(28,28,28);
+     color: white;
+     border:1px solid white;
+     font-size: 0.75rem;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div[id=top-middle-shift] {
+    margin-left: 15%;
+}
+
+.mf.dw {
+    width: 35%;
+}
+
+.mf.dw.g {
+    margin-left: 5%;
+}
+
+#footer{
+    width: 100%;
+    height:420px;
+    background-color: rgb(45, 45, 45);
+}
+
+/* .footer-divs {
+    border: 1px solid red;
+} */
+
+
+
+.footer2 {
+    margin: auto;
+    width: 76%;
+    height: 200px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+}
+
+/* .footer2-divs {
+    border: 1px solid red;
+} */
+
+ul.footer-list, li {
+    list-style: none;
+    padding-inline-start: 8px;
+    padding-bottom: 5px;
+}
+
+div[id="divided"] {
+    display: flex
+}
+
+.footer3 {
+    width: 76%;
+    margin:auto;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 35px;
+}
+
+ /* .footer3-divs {
+    border:1px solid yellow;
+}  */
+
+div[class=bottom-icons] {
+    /* border:1px solid orange; */
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+}
+
+#line {
+    width:76%;
+    margin: auto;
+    height: 70px;
+    border-top: 2px solid rgb(50, 50, 50);
+}
+
+.footer4 {
+    width: 20%;
+    margin:auto;
+    margin-top: 10px;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer4-divs {
+    border:1px solid #CDCDCD;
+}
+
+img[alt=Jumia-top] {
+    width: 80%;
+    margin-top: 4px;
+}
+
+ img[alt=Jumia-Logo] {
+    width: 80%;
+}
+
+img[alt=Jumia-food] {
+    width:75%;
+    margin-left:5px;
+} 
+
+img[alt=Jumia-pay] {
+    width:60%;
+    margin-left:2px;
+    margin-top:6px;
+} 
+
+img[class=line4-logos] {
+    width: 15%;
+    float:left;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+img[class=line2-pics] {
+    width: 80%;
+    float:top;
+    margin-left: 10px;
+}
+
+img[class=line3-pics] {
+    width: 80%;
+    float:top;
+    margin-left: 10px;
+}
+
+img[class=cat-pics] {
+    width: 100%;
+    float:top;
+}
+
+img[class=deals-pics] {
+    width: 90%;
+    float:top;
+}
+
+img[class=banners], img[class=under], img[class=stay], img[class=new], img[class=feat], img[class=work] {
+    width: 100%;
+}
+
+img[alt=footer-logo] {
+    width: 50%;
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
