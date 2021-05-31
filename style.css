@@ -53,7 +53,7 @@ input[id=header-input] {
     height: 100%;
     border-radius: 5px;
     border:1px solid grey;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 div > button[id=search] {
@@ -80,7 +80,7 @@ div > button[id=search] {
    /* background-color: rgb(221, 220, 220);*/
    font-weight: bolder;
    font-size: 0.88rem;
-   color: rgb(95, 95, 95);
+   color: rgb(65, 65, 65);
 }
 
 select > option[value=help] {
@@ -94,25 +94,17 @@ select > option > button {
 #cart {
     display: inline-block;
     font-weight: bolder;
-   font-size: 0.9rem;
-   color: rgb(95, 95, 95);
-   margin-left:25px;
+   font-size: 1rem;
+   color: rgb(65,65, 65);
+   margin-left:10px;
    margin-top: 10px;
-}
-
-button[id=search] {
-    width: 100px;
-    height:30px;
-    background-color:#f68b1e;
-    border-radius: 3px;
-    border:0px;
 }
 
 #line3 {
     margin: auto;
     margin-top: 10px;
     width: 76%;
-    height: 390px;
+    /* height: 390px; */
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     gap: 10px 10px;
@@ -132,6 +124,65 @@ div.line3:first-child{
 div.line3:nth-child(2){
     grid-row: 1 / span 2;
 }
+
+ul.line3-list {
+    list-style: none;
+    font-size: 0.8rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-inline-start: 0;
+}
+
+.line3-right { 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    font-style: normal;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+i.right-under {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-size: 0.75rem;
+}
+
+.top-sell {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    margin-left: 25px;
+}
+
+.top-sell2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 25px;
+}
+
+.top-sell3 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    margin-left: 10px;
+    text-decoration: line-through;
+    margin-left: 25px;
+}
+
+
+li {
+    margin-bottom: 10px;
+}
+
+
 
 #line4 {
     margin: auto;
@@ -230,7 +281,8 @@ span {
 }
 
 .double-col-grid {
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px; 
 }
 
 .single-col-grid {
@@ -297,7 +349,6 @@ p {
 .footer-head {
     margin: auto;
     width: 76%;
-    height:150px;
    display: grid;
    grid-template-columns: 1fr 2fr 1fr;
 }
@@ -345,7 +396,7 @@ input[id=footer-input] {
 
 button.mf {
     height:32px;
-     width:12%;
+     width:50px;
      border-radius: 5px;
      background-color:rgb(28,28,28);
      color: white;
@@ -369,7 +420,7 @@ div[id=top-middle-shift] {
 
 #footer{
     width: 100%;
-    height:420px;
+
     background-color: rgb(45, 45, 45);
 }
 
@@ -382,7 +433,6 @@ div[id=top-middle-shift] {
 .footer2 {
     margin: auto;
     width: 76%;
-    height: 200px;
    display: grid;
    grid-template-columns: repeat(4, 1fr);
 }
@@ -407,7 +457,7 @@ div[id="divided"] {
     height: 100px;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    margin-top: 35px;
+    margin-top: 7%;
 }
 
  /* .footer3-divs {
@@ -424,7 +474,6 @@ div[class=bottom-icons] {
 #line {
     width:76%;
     margin: auto;
-    height: 70px;
     border-top: 2px solid rgb(50, 50, 50);
 }
 
@@ -437,9 +486,9 @@ div[class=bottom-icons] {
     grid-template-columns: 1fr 1fr;
 }
 
-.footer4-divs {
+/* .footer4-divs {
     border:1px solid #CDCDCD;
-}
+} */
 
 img[alt=Jumia-top] {
     width: 80%;
@@ -447,7 +496,7 @@ img[alt=Jumia-top] {
 }
 
  img[alt=Jumia-Logo] {
-    width: 80%;
+    width: 140px;
 }
 
 img[alt=Jumia-food] {
@@ -469,28 +518,28 @@ img[class=line4-logos] {
 }
 
 img[class=line2-pics] {
-    width: 80%;
+    width: 90%;
     float:top;
     margin-left: 10px;
 }
 
 img[class=line3-pics] {
-    width: 80%;
+    width: 90%;
     float:top;
     margin-left: 10px;
 }
 
 img[class=cat-pics] {
-    width: 100%;
+    width: 85%;
     float:top;
 }
 
-img[class=deals-pics] {
+img[class=deals-pics], img[class=feat], img[class=under], img[class=stay] {
     width: 90%;
     float:top;
 }
 
-img[class=banners], img[class=under], img[class=stay], img[class=new], img[class=feat], img[class=work] {
+img[class=banners],  img[class=new],  img[class=work] {
     width: 100%;
 }
 
@@ -499,9 +548,92 @@ img[alt=footer-logo] {
     margin-top: 25px;
 }
 
+img[alt=line4-Banner] {
+    width: 800px;
+    height: 100%;
+    margin-top: 2px;
+    border-radius: 5px;
+}
+
+img[alt=free-img] {
+    width: 100%;
+    border-radius: 3px;
+}
+
+@media (max-width:1000px) {
 
 
+    div.line3:nth-child(3), div.line3:nth-child(4) {
+    display: none;
+}
 
+.footer3, .footer4 {
+    display: none;
+    }
+}
 
+@media (max-width:972px) {
+    .footer-head {    
+        grid-template-columns: 1fr 3fr;
+}
+
+#top-middle-shift, .mf.dw {
+
+    display:none;
+}
+
+}
+
+@media (max-width:875px)
+{
+
+    img[alt=Jumia-Logo] {
+        width: 100px;
+    }
+
+    img[alt=line4-Banner] {
+        width: 500px;
+         height: 80%; 
+    }
+
+    #login, #help {
+    width: 75px;
+    font-size: 0.7rem;
+    }
+
+    #cart {
+        font-size: 0.8;
+    }
+
+    ul.line3-list {
+        font-size: 0.6rem;
+        padding-bottom: 0 ;
+    }
+
+    .top-sell, .top-sell3{
+        font-size: 0.6rem;
+    }
+
+    .top-sell2{
+        font-size: 0.7rem;
+    }
+
+    ul.footer-list, li {
+        padding-inline-start: 0;
+        padding-bottom: 0;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+    }
+
+    .bottom-div-heads {
+        font-size: 0.8rem;
+    }
+    
+    .writings {
+        font-size: 0.5rem;
+    }
+}
 
 
